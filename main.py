@@ -6,4 +6,5 @@ nato_dictionary = {value.letter:value.code for (key, value) in nato_alphabets.it
 
 user_input = input("Enter a word: ").upper()
 answer = [nato_dictionary.get(word) for word in user_input]
+# or answer = [nato_dictionary[word] for word in user_input]
 print(answer)
